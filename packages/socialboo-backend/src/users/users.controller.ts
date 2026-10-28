@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { Session, type UserSession, AllowAnonymous, OptionalAuth } from '@thallesp/nestjs-better-auth';
 
 @Controller('users')
-export class UserController {
+export class UsersController {
   @Get('me')
   async getProfile(@Session() session: UserSession) {
     return { user: session.user };

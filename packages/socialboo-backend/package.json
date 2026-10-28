@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "nest build",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@fastify/static": "latest",
-    "@magicyan/discord": "^latest",
+    "@magicyan/discord": "latest",
     "@nestjs/common": "latest",
     "@nestjs/config": "latest",
     "@nestjs/core": "latest",
@@ -45,7 +45,8 @@
     "pg": "latest",
     "postgres": "latest",
     "reflect-metadata": "latest",
-    "rxjs": "latest"
+    "rxjs": "latest",
+    "zod": "latest"
   },
   "devDependencies": {
     "@nestjs/cli": "latest",

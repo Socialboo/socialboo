@@ -4,6 +4,8 @@ import { AuthModule } from '@thallesp/nestjs-better-auth';
 import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { auth } from '@/shared/index.js';
+import { OpenapiModule } from './api/api.module.js';
+import { UsersModule } from './users/users.module.js';
 
 @Module({
   imports: [
@@ -12,6 +14,8 @@ import { auth } from '@/shared/index.js';
       envFilePath: '.env',
     }),
     AuthModule.forRoot({ auth }),
+    OpenapiModule,
+    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
