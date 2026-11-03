@@ -33,6 +33,7 @@
     "@nestjs/common": "latest",
     "@nestjs/config": "latest",
     "@nestjs/core": "latest",
+    "@nestjs/drizzle": "latest",
     "@nestjs/platform-express": "latest",
     "@nestjs/platform-fastify": "latest",
     "@nestjs/swagger": "latest",

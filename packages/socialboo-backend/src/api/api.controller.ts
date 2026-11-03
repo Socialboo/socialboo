@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { auth } from '@/shared/index.js';
+import { auth } from '@/db/auth.js';
 import { AllowAnonymous } from '@thallesp/nestjs-better-auth';
 
 @Controller('api')

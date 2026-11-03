@@ -41,8 +41,10 @@ export function validateEnv<T extends ZodRawShape>(schema: ZodObject<T>) {
   return result.data as Record<string, string> & z.infer<typeof schema>;
 }
 
-export const env = validateEnv(z.object({
-  HOST: z.string().default('localhost'),
-  PORT: z.coerce.number().default(8080),
-  DATABASE_URL: z.string().min(1, { message: 'DATABASE_URL is required' }),
-}));
+export const env = validateEnv(
+  z.object({
+    HOST: z.string().default('localhost'),
+    PORT: z.coerce.number().default(8080),
+    DATABASE_URL: z.string().min(1, { message: 'DATABASE_URL is required' }),
+  }),
+);
